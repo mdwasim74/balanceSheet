@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building A Balance Sheet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main>
+        <section>
+            <!-- Screen readers announce HTML elements based on the document flow. We will eventually want the balance sheet to have a heading of "Balance Sheet" and a subheading of "AcmeWidgetCorp". However, this order does not make sense if announced by a screen reader. -->
+            <h1>
+
+                <span class="flex">
+                    <span>MWU Engineering Works</span>
+                    <span>Balance Sheet</span>
+
+                </span>
+            </h1>
+            <!-- You want this particular element to be hidden from screen readers, so give it the aria-hidden attribute set to true. -->
+            <div id="years" aria-hidden="true">
+                <span cass="years">2020</span>
+                <span cass="years">2021</span>
+                <span cass="years">2022</span>
+            </div>
+            <div class="table-wrap">
+                <table>
+                    <!-- HTML tables use the caption element to describe what the table is about.  -->
+                    <caption>Assets</caption>
+                    <!-- The thead and tbody elements are used to indicate which portion of your table is the header, and which portion contains the primary data or content. -->
+                    <thead>
+                        <!-- td-table row, td- data cell, th-header cell -->
+                        <tr>
+                            <td></td>
+                            <th><span class="sr-only year">2019</span></th>
+                            <th><span class="sr-only year">2020</span></th>
+                            <th class="current"><span class="sr-only year">2021</span></th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <table></table>
+                <table></table>
+
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
