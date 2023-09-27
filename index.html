@@ -13,22 +13,20 @@
         <section>
             <!-- Screen readers announce HTML elements based on the document flow. We will eventually want the balance sheet to have a heading of "Balance Sheet" and a subheading of "AcmeWidgetCorp". However, this order does not make sense if announced by a screen reader. -->
             <h1>
-
                 <span class="flex">
                     <span>MWU Engineering Works</span>
                     <span>Balance Sheet</span>
-
                 </span>
             </h1>
             <!-- You want this particular element to be hidden from screen readers, so give it the aria-hidden attribute set to true. -->
             <div id="years" aria-hidden="true">
-                <span cass="years">2020</span>
-                <span cass="years">2021</span>
-                <span cass="years">2022</span>
+                <span class="years">2020</span>
+                <span class="years">2021</span>
+                <span class="years">2022</span>
             </div>
             <div class="table-wrap">
                 <table>
-                    <!-- HTML tables use the caption element to describe what the table is about.  -->
+                    <!-- HTML tables use the caption element to  describe what the table is about.  -->
                     <caption>Assets</caption>
                     <!-- The thead and tbody elements are used to indicate which portion of your table is the header, and which portion contains the primary data or content. -->
                     <thead>
@@ -92,17 +90,41 @@
                             <td class="current">$400</td>
                         </tr>
                         <tr class="data">
+                            <th>Credit <span class="description">The outstanding balance on our credit card.</span></th>
+                            <td>$50</td>
+                            <td>$50</td>
+                            <td class="current">$75</td>
                         </tr>
                         <tr class="total">
+                            <th>Total <span class="sr-only">Liabilities</span></th>
+                            <td>$750</td>
+                            <td>$600</td>
+                            <td class="current">$475</td>
                         </tr>
                     </tbody>
                 </table>
-                <table></table>
-
+                <table>
+                    <caption>Net Worth</caption>
+                    <thead>
+                        <tr>
+                            <td></td>
+                            <th><span class="sr-only">2019</span></th>
+                            <th><span class="sr-only">2020</span></th>
+                            <th><span class="sr-only">2021</span></<th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="total">
+                            <th>Total <span class="sr-only">Net Worth</span></th>
+                            <td>$-171</td>
+                            <td>$136</td>
+                            <td class="current">$334</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </section>
     </main>
-
 </body>
 
 </html>
