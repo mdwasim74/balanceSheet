@@ -59,6 +59,7 @@ section {
   max-width: 40rem;
   margin: 0 auto;
   border: 2px solid #d0d0d5;
+  /* padding: 0.75rem 1.52rem 0.75rem 0.75rem; */
 }
 
 /* The last part of your table heading is your years. */
@@ -87,7 +88,7 @@ section {
 
 /* You wrapped your tables in a container with the table-wrap class. */
 .table-wrap {
-  padding: 0 0.75rem 1.5rem 0.75rem;
+  padding: 0px 3.75rem 1.25rem 0.15rem;
 }
 
 /* Before you start diving in to the table itself, your span elements are currently bolded. 
